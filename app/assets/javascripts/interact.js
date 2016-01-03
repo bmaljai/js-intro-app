@@ -1,7 +1,7 @@
 function changeColor(box) {
   console.log(box);
   // .style["CSS-ATTRIBUTE"] can change the styling of the element
-  box.style["background-color"] = "blue";
+  box.style["background"] = "green";
 }
 
 function addText(box) {
@@ -16,6 +16,7 @@ function readText() {
   var boxWithText = document.getElementById("textbox");
   alert(boxWithText.innerHTML);
 }
+
 
 // Other useful functions:
 

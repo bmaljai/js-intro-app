@@ -116,6 +116,8 @@
 // end
 
 // JS:
+// var x = prompt();
+
 // if (x > 50) {
 //   console.log("High number");
 // } else if (x < 25) {
@@ -132,7 +134,7 @@
 
 // JS:
 // 5 == 5 // true
-// 5 == "5" // true
+// true == "5" // true
 // 5 === "5" // false
 
 // // Falsy things:
@@ -157,11 +159,10 @@
 // var text = "";
 
 // while (i < 10) {
-//     text = text + " The number is " + i;
+//     console.log(" The number is " + i)
 //     i++;
 // }
 
-// console.log(text);
 
 // // Do/While loops
 
@@ -172,8 +173,11 @@
 //     text += "The number is " + i;
 //     i++;
 // }
-// while (i < 10);
+// while (i < 10) {
+//   console.log("it's counting!!!");
+// }
 
+// console.log(text);
 // // For loops
 
 
@@ -291,21 +295,26 @@
 
 // car = Car.new("Honda Civic", 2009, 20000)
 
-function Car( model, year, miles ) {
+
+
+
+
+
+// function Car( model, year, miles ) {
  
-  this.model = model;
-  this.year = year;
-  this.miles = miles;
+//   this.model = model;
+//   this.year = year;
+//   this.miles = miles;
  
-  this.toString = function () {
-    return this.model + " has done " + this.miles + " miles";
-  }
-}
+//   this.purpleHippo = function () {
+//     return this.model + " has done " + this.miles + " miles";
+//   }
+// }
  
 // // Usage:
  
 // // We can create new instances of the car
-var civic = new Car( "Honda Civic", 2009, 20000 );
+// var civic = new Car( "Honda Civic", 2009, 20000, "monkey" );
 // var mondeo = new Car( "Ford Mondeo", 2010, 5000 );
  
 // // and then open our browser console to view the
