@@ -1,6 +1,7 @@
-<h1>Calculator</h1>
 
-<div id="numbers-game">
+
+
+<!-- <div id="numbers-game">
   <div class="row">
     <% (1..10).each do |number| %>
       <div class="box col-md-2 " onclick="add(<%= number %>)"><%= number %></div>
@@ -10,4 +11,32 @@
   
 </div>
 
-<div id="sum">0</div>
+<div id="sum">0</div> -->
+
+
+<div id="calc-game">
+  <div class="row">
+    <div id="title">Calculator</div>
+  </div>
+
+  <div class="row">
+    <div id ="total">0</div>
+  </div>
+
+  <div class="row">
+    <%(1..9).each do |number|%>
+      <div class ="box col-md-3" onclick="add(<%= number %>)">
+      <%= number %>
+      </div>
+    <%end%>        
+  </div>
+
+  <div class="row">
+    <div id ="random" class="large-button" onclick="addRandomInt()">Random(1-9)</div>
+  </div>
+
+  <div class="row">
+    <div id ="clear" class="large-button" onclick="clearCalc()">Clear</div>
+  </div>
+</div>
+

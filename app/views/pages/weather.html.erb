@@ -2,13 +2,13 @@
 
 <div id="current-time"></div>
 <div>
-  <div class="row">
+  <div class="row weather-boxes">
     <div class="col-md-1"> </div>
-    <div class="box col-md-3" onclick="changeWeather(this, 'yellow')">Morning</div>
+    <div id="morning" class="box col-md-3" onclick="setWeather(this, 'yellow')">Morning</div>
     <div class="col-md-1" > </div>
-    <div class="box col-md-3" onclick="changeWeather(this, 'orange')">Afternoon</div>
+    <div id = "afternoon" class="box col-md-3" onclick="setWeather(this, 'orange')">Afternoon</div>
     <div class="col-md-1"> </div>
-    <div class="box col-md-3" onclick="changeWeather(this, 'black')">Evening</div>
+    <div id = "evening" class="box col-md-3" onclick="setWeather(this, 'purple')">Evening</div>
   </div>
   
 </div>
